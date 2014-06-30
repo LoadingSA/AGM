@@ -1,7 +1,7 @@
 // by commy2
 
 AGM_NightVision_ppEffect = ppEffectCreate ["FilmGrain", 1235];
-AGM_NightVision_ppEffect ppEffectAdjust [0.25, 2.5, 2.5, 2.5, 2.5, false];
+AGM_NightVision_ppEffect ppEffectAdjust [0.29,1.8,1,0.1,0.65,false];
 AGM_NightVision_ppEffect ppEffectCommit 0;
 
 AGM_NightVision_ppEffectNVGBrightness = ppEffectCreate ["ColorCorrections", 1236];
