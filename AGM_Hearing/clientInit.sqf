@@ -23,10 +23,11 @@ _this spawn {
 
 AGM_CurrentDeafness = 0;
 AGM_NewStrength = 0;
+AGM_hearing = true;
 
 // Spawn volume updating process
 [] spawn {
-  while {true} do {
+  while {AGM_hearing} do {
 
     // Check if new noises increase deafness
     if (AGM_NewStrength * StrenghToDeafness > AGM_CurrentDeafness) then {
