@@ -114,7 +114,7 @@ class CfgVehicles {
       class AGM_BecomeLeader {
         displayName = "$STR_AGM_Interaction_BecomeLeader";
         condition = "count (units group player) > 1 && {leader group player != player}";
-        statement = "_newGroup = createGroup side player; (units group player) joinSilent _newGroup; _newGroup selectLeader player;";
+        statement = "[-2,{(group _this) selectLeader _this},player] call CBA_fnc_globalExecute";
         showDisabled = 1;
         priority = -1;
       };
